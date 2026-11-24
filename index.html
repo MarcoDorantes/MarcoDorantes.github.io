@@ -1,3 +1,21 @@
-<h1 style='color:red'>This site is still under construction</h1>
-<p><a href='https://pages.github.com/'>GitHub Pages</a></p>
-<p>Wn <a href='https://help.github.com/pages/'>GitHub Pages docs</a></p>
+<head>
+    <title>Marco Dorantes</title>
+    <script>
+        function getDivValue() {
+            return " still ";
+        }
+
+        function initializeDiv(divElement) {
+            divElement.textContent = getDivValue();
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style='color:red'>This site is<span id="msg"></span>under construction</h1>
+    <p><a href='https://pages.github.com/'>GitHub Pages</a></p>
+    <p>Wn <a href='https://help.github.com/pages/'>GitHub Pages docs</a></p>
+    <script>
+        initializeDiv(document.getElementById("msg"));
+    </script>
+</body>
