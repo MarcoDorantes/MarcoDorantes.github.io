@@ -1,21 +1,24 @@
 <head>
     <title>Marco Dorantes</title>
     <script>
-        function getDivValue() {
+        function getThisValue() {
             return " still ";
         }
 
-        function initializeDiv(divElement) {
-            divElement.textContent = getDivValue();
+        function initializeThis(thisElement) {
+            thisElement.textContent = getThisValue();
         }
     </script>
 </head>
 
-<body>
+<body style="background-color: gainsboro">
     <h1 style='color:red'>This site is<span id="msg"></span>under construction</h1>
+    <span style='color:rgba(252, 255, 250, 0)'>@@@@@@@@@@@@@@@@@@@@@@@@</span>
     <p><a href='https://pages.github.com/'>GitHub Pages</a></p>
-    <p>Wn <a href='https://help.github.com/pages/'>GitHub Pages docs</a></p>
+    <p><a href='https://help.github.com/pages/'>GitHub Pages docs</a></p>
+    <p><a href='https://docs.github.com/en/pages'>GitHub Pages documentation</a></p>
+    
     <script>
-        initializeDiv(document.getElementById("msg"));
+        initializeThis(document.getElementById("msg"));
     </script>
 </body>
